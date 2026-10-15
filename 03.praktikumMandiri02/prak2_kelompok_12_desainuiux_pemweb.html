@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">FORM PEMESANAN PRODUK</h1>
+    <form action="hasil_pemesanan.html" method="POST">
+        <!-- buat tabel 2 kolom supaya gambar produk bisa di samping kiri  -->
+        <table border="0" width="100%">
+            <!-- buat supaya isian tabel nya mojok ke atas -->
+            <tr valign="top">
+                <!-- Buat nampilin border gambar produk -->
+                <td width="30%" align="center">
+                    <table border="4" width="180" height="180">
+                        <tr>
+                            <td align="center">
+                                <img src="placeholder.png" alt="Gambar Produk" width="150" height="150">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button type="button">Upload Picture</button>
+                </td>
+
+                <!-- Form Pemesanan -->
+                <td width="70%">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td width="25%"><label for="title">Title Here :</label></td>
+                            <td><input type="text" id="title" name="title" value="MacBook Air £800" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="description">Description :</label></td>
+                            <td>
+                                <textarea 
+                                id="description" 
+                                name="description" 
+                                rows="4"
+                                cols="38">Year : 2009&#10;Model : &#10;Condition : Mint
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_number">Account Number :</label></td>
+                            <td><input type="text" id="account_number" name="account_number" value="123-456-789-0" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bank">Bank :</label></td>
+                            <td>
+                                <select id="bank" name="bank">
+                                    <option value="HSBC" selected>HSBC</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                    <option value="BNI">BNI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_holder">Account Holder :</label></td>
+                            <td><input type="text" id="account_holder" name="account_holder" value="Name Here" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="transaction">Transaction :</label></td>
+                            <td>
+                                <select id="transaction" name="transaction">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <br>
+                                <small><i>* If the transaction is for 3 person, choose 3 from the drop-down
+                                        list</i></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" id="send_mobile" name="send_options[]" value="mobile" checked>
+                                <label for="send_mobile">Send to Mobile Phone</label>
+                                <br>
+                                <input type="checkbox" id="send_email" name="send_options[]" value="email" checked>
+                                <label for="send_email">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile_number">Send to Mobile Phone :</label></td>
+                            <td><input type="text" id="mobile_number" name="mobile_number" value="1234567890, 1234567891" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email_address">Send to Email :</label></td>
+                            <td><input type="text" id="email_address" name="email_address" value="mfmmzg10@aston.ac.uk, fyx_06@yahoo.com" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <br>
+                                <input type="submit" value="Generate Nabr Link"
+                                    style="background-color: green; color: white; padding: 6px 16px; font-weight: bold; cursor: pointer;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

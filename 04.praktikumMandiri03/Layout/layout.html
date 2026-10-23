@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 119, 77);
+            padding: 10px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 10px;
+        }
+
+        header {
+            background-color: brown;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+            border: 1px solid;
+        }
+        nav {
+            background-color: #f3ba3e;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #e0e0e0;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+
+        article {
+            flex: 3;
+            background-color: #ffe082;
+            padding: 15px;
+            border: 1px solid #ffd54f;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        section {
+            background-color: #ffe57f;
+            padding: 15px;
+            border: 1px solid #ffca28;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #fabf73;
+            padding: 15px;
+            border: 1px solid #dbe681;
+            color: #000;
+        }
+
+        footer {
+            background-color: #ffeb3b;
+            padding: 20px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <img src="../Layout/logo/1000031808.jpg" alt="" width="150px" >
+            <p>Ini Hutaoo</p>
+        </header>
+
+        <!-- navbar -->
+        <nav>
+            Navbar
+        </nav>
+
+        <!-- sidebar & content -->
+        <div class="main-content">
+            <article>
+                Article
+                <section>Section</section>
+                <section>Section</section>
+                <section>Section</section>
+            </article>
+
+            <aside>
+                Aside
+            </aside>
+        </div>
+        <!-- Footer -->
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Profile Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #6ba8f2;
+            padding: 10px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 100%;
+            gap: 10px;
+        }
+
+        header {
+            background-color: #98c5fd;
+            padding: 20px;
+            font-weight: bold;
+            border: 1px solid #333;
+        }
+
+
+
+        .main-content {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+
+        article {
+            flex: 3;
+            background-color: #166aa1;
+            padding: 15px;
+            border: 1px solid #100e5a;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        section {
+            background-color: #9ec1f7;
+            padding: 15px;
+            border: 1px solid #162681;
+        }
+
+
+        footer {
+            background-color: #1b4f8f;
+            padding: 20px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #192a5a;
+        }
+
+        .media-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .media-box {
+            background: #d1dff3;
+            padding: 10px;
+            border: 1px solid #ccc;
+            flex: 1;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Name -->
+    <div class="wrapper">
+        <header>
+            <table border="0" width="100%">
+                <tr valign="top">
+                    <td width="70%">
+                        <table border="0" width="100%">
+                            <tr valign="top">
+                                <td width="150">
+                                    <img src="../Layout/img/Ripki Propil.png" alt="Foto Profil" width="130" height="150" style="border: 2px solid #333; object-fit: cover;">
+                                </td>
+                                <td>
+                                    <h1 style="margin-top: 0;">Profile Name</h1>
+                                    <table border="0" cellpadding="2" cellspacing="0">
+                                        <tr>
+                                            <td width="80">Name</td>
+                                            <td width="10">:</td>
+                                            <td>Muhammad Rifqi Abdullah</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TTL</td>
+                                            <td>:</td>
+                                            <td>Bekasi, 09 September 2007</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alamat</td>
+                                            <td>:</td>
+                                            <td>Kab. Bekasi, Jawa Barat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td>:</td>
+                                            <td><a href="#">m.rifqi8026@gmail.com</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Telephone</td>
+                                            <td>:</td>
+                                            <td>085718088566</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </header>
+
+
+        <div class="main-content">
+            <!-- Dekripsi Diri -->
+            <article>
+                <section>
+                    <p>Saya adalah mahasiswa yang memiliki minat di bidang teknologi informasi, khususnya pengembangan web, jaringan komputer, dan keamanan siber. Saya memiliki latar belakang pendidikan SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang membuat saya tertarik untuk terus mempelajari teknologi dan mengembangkan keterampilan di bidang IT. Saya juga senang mempelajari hal-hal baru, mencoba pengalaman baru, serta meningkatkan kemampuan diri agar menjadi pribadi yang lebih percaya diri.</p>
+                </section>
+                
+                <section>
+                    <p>Saya memiliki tujuan untuk menjadi pribadi yang mandiri, percaya diri, bertanggung jawab, dan bermanfaat bagi orang lain melalui ilmu serta karya yang saya hasilkan. Saya menyadari bahwa masih ada beberapa hal yang perlu saya tingkatkan, seperti kemampuan komunikasi dan konsistensi dalam belajar. Oleh karena itu, saya ingin terus berusaha, belajar dari kesalahan, dan mengembangkan potensi diri agar dapat menjadi pribadi yang profesional serta mampu meraih cita-cita di bidang teknologi informasi.</p>
+                </section>
+
+                <section>
+                    <div class="media-container">
+                        <!-- Konten Video -->
+                        <div class="media-box">
+                            <h4>Video Profil</h4>
+                            <video width="100%" controls style="margin-top: 5px;">
+                                <source src="https://youtu.be/IWa3Xvn2MhQ?si=aHm-u3lbH_OuYZIe" type="video/mp4">
+                                Browser Anda tidak mendukung tag video.
+                            </video>
+                        </div>
+
+                        <!-- Koleksi Foto -->
+                        <div class="media-box">
+                            <h4>Koleksi Foto</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 5px;">
+                                <img src="../Layout/img/20250618235157.png" width="100%" height="60" style="object-fit:cover;" alt="Foto 1">
+                                <img src="../Layout/img/20250618235240.png" width="100%" height="60" style="object-fit:cover;" alt="Foto 2">
+                                <img src="../Layout/img/20250618235244.png" width="100%" height="60" style="object-fit:cover;" alt="Foto 3">
+                                <img src="../Layout/img/20250618235314.png" width="100%" height="60" style="object-fit:cover;" alt="Foto 4">
+                            </div>
+                        </div>
+
+                        <!-- Link Download -->
+                        <div class="media-box">
+                            <h4>Attachments</h4>
+                            <ul style="margin-left: 15px; margin-top: 5px; font-size: 14px;">
+                                <li><a href="#" download>Lorem ipsum dolor sit amet</a></li>
+                                <li><a href="#" download>Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#" download>Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#" download>Lorem ipsum dolor sit amet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p align="center" style="margin: 12px 0;">&copy; 2026 Praktikum Desain UI/UX Pemrograman Web</p>
+        </footer>
+    </div>
+</body>
+</html>
